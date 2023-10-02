@@ -38,3 +38,8 @@ Settings > Accounts > Access work or school > info    #verify all that machine i
 > sc query sense   #Windows Defender Advanced Threat Protection (ATP)  Componenet of MDE
 # MDE is required and for both of these services be running on machine.
 ----
+
+https://www.youtube.com/watch?v=Tg5caEU8v3s    9:50
+https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment?view=o365-worldwide
+https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction?view=o365-worldwide
+https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-exploit-protection?view=o365-worldwide Intune turn on exploit protection
