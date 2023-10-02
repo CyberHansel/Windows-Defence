@@ -23,3 +23,17 @@ Value
 6: Warn (Enable the ASR rule but allow the end-user to bypass the block)
 
 To exclude files and folders from ASR rules, select the Exclude files and paths from Attack surface reduction rules setting and set the option to Enabled. Select Show and enter each file or folder in the Value name column. Enter 0 in the Value column for each item.
+------------
+Intune admin center > Endpoint security > Attack surface reduction. 
+PILOT
+
+
+
+------
+Settings > Accounts > Access work or school > info    #verify all that machine is getting, all the policies that are defined.
+
+> systeminfo | findstr /B /C:"Domain"
+> sc query  #retrieves info about service
+> sc query windefend   #Windows Defender Antivirus
+> sc query sense   #Windows Defender Advanced Threat Protection (ATP) 
+----
