@@ -6,3 +6,20 @@ Update ADMX Definitions
 * Adaptable: ASR rules can be set in 'block mode' or 'audit mode' (doesnt block but notify about things that would block!)
 * Mitigation Against Zero-Days: Since ASR is behavior-based, it can offer protection against zero-day threats that haven't been previously seen or don't have a known signature yet.
 * In essence, while Microsoft Defender will catch and block many threats, ASR rules add an additional layer by preventing the behaviors commonly seen in malware, thus reducing the chances of compromise even further.
+
+Comment:
+* I would suggest to start with machines from different business units, enable all the rules in audit mode. Check ASR reports section to get the dump of all the files getting impacted, add valid exclusions first and then enabled rules in block mode.
+
+---------
+Computer configuration > Administrative templates > Windows components > Windows Defender Exploit Guard > Exploit Protection > Use a common set of exploit protection settings.
+
+Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus > Microsoft Defender Exploit Guard > Attack surface reduction.
+---------
+Configure Attack surface reduction rules and select Enabled.
+Value
+0: Disable (Disable the ASR rule)
+1: Block (Enable the ASR rule)
+2: Audit (Evaluate how the ASR rule would impact your organization if enabled)
+6: Warn (Enable the ASR rule but allow the end-user to bypass the block)
+
+To exclude files and folders from ASR rules, select the Exclude files and paths from Attack surface reduction rules setting and set the option to Enabled. Select Show and enter each file or folder in the Value name column. Enter 0 in the Value column for each item.
