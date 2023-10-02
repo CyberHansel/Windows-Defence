@@ -1,24 +1,8 @@
 Update ADMX Definitions
 
-Attack Surface Reduction (ASR) rules are part of Microsoft Defender Exploit Guard, a suite of security features integrated into Microsoft Defender for Endpoint (previously known as Windows Defender ATP). ASR is designed to reduce the vectors by which malware can run by blocking specific actions typically used by threats.
-
-How ASR Works:
-Behavior-based: Instead of looking for known malicious files or file patterns, ASR rules focus on the behaviors that are common in malware attack methods.
-
-Rule-driven: Each rule corresponds to specific malicious behaviors or actions that malware tends to execute. For example, there are rules that prevent Office applications from creating executable content, rules that block JavaScript or VBScript from launching downloaded executable content, and more.
-
-Actionable Feedback: When an ASR rule is triggered, it can block the malicious behavior and provide feedback via the Microsoft 365 Defender portal (or any integrated Security Information and Event Management system). This provides visibility into potential threats in the environment.
-
-Why Use ASR:
-Comprehensive Defense: While Microsoft Defender (or any other antivirus) does detect and block many malicious files and actions, no single defense mechanism is infallible. ASR provides another layer of protection, focusing on behavior rather than signatures.
-
-Adaptable: ASR rules can be set in 'block mode' or 'audit mode'. In audit mode, you can see what would be blocked without actually stopping the behavior, which is useful for testing.
-
-Reduces Attack Vectors: By stopping malicious behaviors and techniques, you reduce the ways (or vectors) an attacker can compromise a system.
-
-Mitigation Against Zero-Days: Since ASR is behavior-based, it can offer protection against zero-day threats that haven't been previously seen or don't have a known signature yet.
-
-Doesn't Defender Block Malicious Programs Anyway?
-Yes, Microsoft Defender does have signatures and heuristics to detect and block many types of malicious programs. However, as mentioned, no defense mechanism is perfect. Malware authors continuously evolve their techniques and create new variants to evade signature-based detection. Therefore, having a layered security approach, which includes signature-based detection, behavior-based detection (like ASR), and other mechanisms, provides a more robust and comprehensive defense.
-
-In essence, while Microsoft Defender will catch and block many threats, ASR rules add an additional layer by preventing the behaviors commonly seen in malware, thus reducing the chances of compromise even further.
+* Attack Surface Reduction (ASR) rules are integrated into Microsoft Defender for Endpoint
+* How ASR Works: Behavior-based: Instead of looking for known malicious files or file patterns, ASR rules focus on the behaviors that are common in malware attack methods.
+* Why Use ASR: Comprehensive Defense: While Microsoft Defender (or any other antivirus) does detect and block many malicious files and actions, no single defense mechanism is infallible. ASR provides another layer of protection, focusing on behavior rather than signatures.
+* Adaptable: ASR rules can be set in 'block mode' or 'audit mode' (doesnt block but notify about things that would block!)
+* Mitigation Against Zero-Days: Since ASR is behavior-based, it can offer protection against zero-day threats that haven't been previously seen or don't have a known signature yet.
+* In essence, while Microsoft Defender will catch and block many threats, ASR rules add an additional layer by preventing the behaviors commonly seen in malware, thus reducing the chances of compromise even further.
