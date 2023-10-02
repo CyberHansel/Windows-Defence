@@ -35,5 +35,6 @@ Settings > Accounts > Access work or school > info    #verify all that machine i
 > systeminfo | findstr /B /C:"Domain"
 > sc query  #retrieves info about service
 > sc query windefend   #Windows Defender Antivirus
-> sc query sense   #Windows Defender Advanced Threat Protection (ATP) 
+> sc query sense   #Windows Defender Advanced Threat Protection (ATP)  Componenet of MDE
+# MDE is required and for both of these services be running on machine.
 ----
